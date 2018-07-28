@@ -11,7 +11,7 @@ In this project we explore the use of efficient columnar dataformats to represen
 Columnar dataformats can achive unprecedented levels of compression due to the columnar data respresentation and columnwise packing strategies including built-in delta- and run-length encoding, followed by entropy encoding.
 
 ## Dataset
-SIFTS residue-level mappings were downloaded (incremental update) on July 27, 2018 and resulted in 105,594,971 residue level mappings. The encoded files where generated with the [CreatePdbToUniProtMappingFile](https://github.com/sbl-sdsc/mmtf-spark/blob/master/src/main/java/edu/sdsc/mmtf/spark/applications/CreatePdbToUniProtMappingFile.java] command line application.
+SIFTS residue-level mappings were downloaded (incremental update) on July 27, 2018 and resulted in 105,594,971 residue level mappings. The encoded files where generated with the [CreatePdbToUniProtMappingFile](https://github.com/sbl-sdsc/mmtf-spark/blob/master/src/main/java/edu/sdsc/mmtf/spark/applications/CreatePdbToUniProtMappingFile.java) command line application.
 
 ## Reading Benchmark (preliminary)
 For this benchmark the entire dataset was encoded in two compressed columnar filed formats. Each file is then read completely into memory and the parsing times are reported in seconds.
