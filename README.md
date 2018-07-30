@@ -35,7 +35,7 @@ In order to evaluate the performance of operating on these datasets, we setup 4 
 | Count     |     **3.7** |     4.1 | 
 | Query     |    **11.9** |    20.2 |
 | Join      |    **12.0** |    23.3 |
-| Convert   |       *6.0* |     7.9 |
+| Convert   |     **6.0** |     7.9 |
 
 Due to efficient indexing and predicate pushdown, the ORC file format outperforms the parquet file format for this dataset.
 
@@ -48,7 +48,7 @@ A Jupyter Notebook of this benchmark is available:
 ## Reading Benchmark (preliminary)
 For this benchmark the entire dataset was encoded in two compressed columnar filed formats. Each file was then read completely into memory and the parsing times were reported in seconds. Note, it is generally not necessary to load the whole dataset into PySpark/Spark. The data are provided to compare the performance with Pandas, which always load all the data.
 
-| Dataset | Pandas[4] (seconds) | PySpark[5] (seconds) | Spark[6] (seconds)|
+| Dataset name | Pandas[4] (seconds) | PySpark[5] (seconds) | Spark[6] (seconds)|
 |:------------- | ----------:| -----------:| ---------:|
 | parquet_gzip   |   **86** |         164 |       177 |
 | parquet_snappy |       88 |         144 |       148 |
