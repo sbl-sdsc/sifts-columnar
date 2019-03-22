@@ -18,7 +18,7 @@ Data were converted to parquet[2] and orc[3] files and compressed with the compr
 
 Dataset name  | File format   | Compression codec | Size (MB)|
 |:----------- |:------------- |:----------------- | --------:|
-xml_gzip      | xml           | gzip              |      tbd |
+xml_gzip      | xml           | gzip              |  ~5200   |
 csv_gzip      | csv           | gzip              |    519.7 |
 parquet_snappy| parquet       | snappy            |    145.1 |
 parquet_gzip  | parquet       | gzip              | **57.9** |
