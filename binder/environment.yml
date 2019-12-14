@@ -7,7 +7,7 @@ channels:
 dependencies:
   - python=3.7
   - openjdk=8.0.152
-  - pyspark=2.3.2
+  - pyspark=2.4.0
   - bokeh=1.4.0
   - dask=2.9.0
   - pandas=0.25
