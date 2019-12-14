@@ -39,11 +39,13 @@ In order to evaluate the performance of operating on these datasets, we setup 4 
 
 Due to efficient indexing and predicate pushdown, the ORC file format outperforms the parquet file format for this dataset.
 
-A Jupyter Notebook of this benchmark is available:
+Jupyter Notebooks of this benchmark is available using 3 dataframe implementations:
 
-[Static view](https://nbviewer.jupyter.org/github/sbl-sdsc/sifts-columnar/blob/master/QueryBenchmark.ipynb)
+[Static view: Pandas Dataframe](https://nbviewer.jupyter.org/github/sbl-sdsc/sifts-columnar/blob/master/notebooks/BenchmarkPandas.ipynb)
+[Static view: Spark Dataframe](https://nbviewer.jupyter.org/github/sbl-sdsc/sifts-columnar/blob/master/notebooks/BenchmarkSpark.ipynb)
+[Static view: Dask Dataframe](https://nbviewer.jupyter.org/github/sbl-sdsc/sifts-columnar/blob/master/notebooks/BenchmarkDask.ipynb)
 
-[Run notebook](https://mybinder.org/v2/gh/sbl-sdsc/sifts-columnar/master)   [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/sbl-sdsc/sifts-columnar/master) (Binder beta, may be slow!) 
+Run notebooks [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/sbl-sdsc/sifts-columnar/master)
 
 ## Reading Benchmark (preliminary)
 For this benchmark the entire dataset was encoded in two compressed columnar filed formats. Each file was then read completely into memory and the parsing times were reported in seconds. Note, it is generally not necessary to load the whole dataset into PySpark/Spark. The data are provided to compare the performance with Pandas, which always load all the data.
