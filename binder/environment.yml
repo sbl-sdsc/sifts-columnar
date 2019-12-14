@@ -1,0 +1,21 @@
+name: sifts-columnar 
+
+channels:
+  - default
+  - conda-forge
+
+dependencies:
+  - python=3.7
+  - openjdk=8.0.152
+  - pyspark=2.3.2
+  - bokeh=1.4.0
+  - dask=2.9.0
+  - pandas=0.25
+  - pyarrow==0.14.1
+  - fastparquet 
+  - jupyterlab=1.0.10
+  - numpy=1.17
+  - nb_conda_kernels=2.2.2
+  - pip
+  - pip:
+    - dask-labextension>=1.0.3

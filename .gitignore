@@ -124,5 +124,8 @@ dependency-reduced-pom.xml
 # SPARK
 spark-warehouse
 
+# DASK
+dask-worker-space
+
 # Mac
 .DS_Store
