@@ -16,6 +16,7 @@ dependencies:
   - jupyterlab=1.0.10
   - numpy=1.17
   - nb_conda_kernels=2.2.2
+  - watermark=1.6.1
   - pip
   - pip:
     - dask-labextension>=1.0.3
